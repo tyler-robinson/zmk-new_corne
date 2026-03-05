@@ -76,16 +76,25 @@
         };
     };
 
-    rgb_encoder: rgb_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-    };
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
 
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        layer_tap_backspace: layer_tap_backspace {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <220>;
+            bindings = <&mo>, <&kp>;
+        };
+
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
         tap-ms = <100>;
     };
@@ -108,7 +117,7 @@
 &kp TAB    &kp Q        &kp W        &kp E         &kp R         &kp T                             &kp UP                &kp Y        &kp U            &kp I         &kp O        &kp P           &tog 6
 &td0       &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hmr RSHFT J     &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &kp SQT
 &kp LCTRL  &kp Z        &kp X        &kp C         &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N        &kp M            &kp COMMA     &kp DOT      &kp FSLH        &kp ESC
-                                     &kp LGUI      &lt 1 SPACE   &lt 3 TAB                                               &lt 4 ENTER  &lt 2 BACKSPACE  &lt 5 DEL
+                                     &kp LGUI      &lt 1 SPACE   &lt 3 TAB                                               &lt 4 ENTER  &layer_tap_backspace 2 BACKSPACE  &lt 5 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
