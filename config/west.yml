@@ -2,6 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
+    - name: eyelash
+      url-base: https://github.com/a741725193
     - name: gpeye
       url-base: https://github.com/GPeye
     - name: tokyo2006
@@ -23,6 +27,12 @@ manifest:
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+    - name: zmk-nice-oled
+      remote: mctechnology17
+      revision: main
+    - name: zmk-board-eyelash
+      remote: eyelash
+      revision: main
     - name: prospector-zmk-module
       remote: tokyo2006
       revision: change_spi2
