@@ -2,11 +2,20 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: gpeye
+      url-base: https://github.com/GPeye
+    - name: tokyo2006
+      url-base: https://github.com/tokyo2006
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
   projects:
+    - name: hammerbeam-slideshow
+      remote: gpeye
+      revision: main
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
       revision: main
@@ -14,5 +23,11 @@ manifest:
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+    - name: prospector-zmk-module
+      remote: tokyo2006
+      revision: change_spi2
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: v0.3
   self:
     path: config
