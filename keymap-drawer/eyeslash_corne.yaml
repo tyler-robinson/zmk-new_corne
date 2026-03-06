@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: eyelash_corne}
+layout: {zmk_keyboard: eyeslash_corne}
 layers:
   BASE:
   - $$mdi:keyboard-tab$$
