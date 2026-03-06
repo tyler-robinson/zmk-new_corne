@@ -161,10 +161,10 @@
         Symbols {
             display-name = "SYM";
             bindings = <
-&trans  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                                &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp BSPC
-&trans  &kp GRAVE  &kp TILDE  &kp PIPE  &kp BSLH  &kp UNDER                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp SQT    &kp DQT
-&trans  &kp LT     &kp GT     &kp LBRC  &kp RBRC  &kp PLUS   &kp C_MUTE                    &mmv MOVE_DOWN                   &kp COMMA  &kp DOT    &kp COLON  &kp SEMI  &kp QMARK  &kp FSLH
-                              &trans    &trans    &trans                                                                    &trans     &trans     &trans
+&kp GRAVE  &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE                                &mmv MOVE_UP                     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTRK      &kp LPAR          &kp RPAR   &kp BSPC
+&trans     &kp COLON       &kp DOLLAR     &kp PERCENT           &kp CARET              &kp PLUS                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT       &kp RBKT          &kp SQT    &kp DQT
+&trans     &kp TILDE       &kp EXCL       &kp AT                &kp POUND              &kp PIPE         &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN  &kp GREATER_THAN  &kp QMARK  &kp FSLH
+                                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER                                                                       &trans                &trans                 &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -184,10 +184,10 @@
 
         Gaming {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E   &kp R   &kp T                     &trans          &kp Y   &kp U   &kp I      &kp O    &kp P     &tog 6
-&kp LSHFT  &kp A  &kp S  &kp D   &kp F   &kp G             &trans  &trans  &trans  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
-&kp LCTRL  &kp Z  &kp X  &kp C   &kp V   &kp B   &trans            &trans          &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                         &trans  &trans  &trans                                    &trans  &trans  &trans
+&kp TAB    &kp Q  &kp W  &kp E           &kp R      &kp T                            &trans          &kp Y      &kp U          &kp I      &kp O    &kp P     &tog 6
+&kp LSHFT  &kp A  &kp S  &kp D           &kp F      &kp G                    &trans  &trans  &trans  &kp H      &kp J          &kp K      &kp L    &kp SEMI  &trans
+&kp LCTRL  &kp Z  &kp X  &kp C           &kp V      &kp B      &kp ESCAPE            &trans          &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &trans
+                         &kp LEFT_SHIFT  &kp LCTRL  &kp SPACE                                        &kp ENTER  &kp BACKSPACE  &trans
             >;
         };
 
