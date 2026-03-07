@@ -113,9 +113,9 @@
         Qwerty {
             display-name = "BASE";
             bindings = <
-&kp TAB    &kp Q        &kp W        &kp E         &kp R         &kp T                             &kp UP                &kp Y        &kp U                             &kp I         &kp O        &kp P           &tog 6
-&td0       &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hmr RSHFT J                      &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &kp SQT
-&kp LCTRL  &kp Z        &kp X        &kp C         &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N        &kp M                             &kp COMMA     &kp DOT      &kp FSLH        &kp ESC
+&kp ESCAPE  &kp Q        &kp W        &kp E         &kp R         &kp T                             &kp UP                &kp Y        &kp U                             &kp I         &kp O        &kp P           &tog 6
+&td0        &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hmr RSHFT J                      &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &kp SQT
+&kp LCTRL   &kp Z        &kp X        &kp C         &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N        &kp M                             &kp COMMA     &kp DOT      &kp FSLH        &kp ESC
                 &lt 7 ESCAPE  &layer_tap_backspace 1 SPACE   &lt 3 TAB                                               &lt 4 ENTER  &layer_tap_backspace 2 BACKSPACE  &layer_tap_backspace 5 DEL
             >;
 
